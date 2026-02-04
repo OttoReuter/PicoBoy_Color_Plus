@@ -1,2 +1,13 @@
-Nachdem schon eine ganze Reihe von Microcontroller Boards auf Basis des RP2350 angeboten werden, soll jetzt auch der PicoBoy Color Plus (PBC+) als Nachfolger des PicoBoy Color in den Verkauf kommen. Damit ist der RP2350 jetzt auch in der PicoBoy-Familie vertreten. Zwar handelt es sich beim PBC+ nicht um eine völlige Neuentwicklung, aber der PBC+ bietet gegenüber dem Vorgängermodell eine ganze Reihe von Verbesserungen, welche den Gebrauchswert deutlich steigern. So dürfte für den Hobbybastler neben dem schnelleren Prozessor mit doppelt so großem RAM Speicher (520 KB interner SRAM) vor allem der Flash Speicher mit 16 MB interessant sein. Es sind damit Datenaufzeichnungen ohne externe SD-Karte über einen längeren Zeitraum möglich. Auch die jetzt vorhandene Stemma_QT Buchse ist ein Zugewinn, denn dadurch erweitern sich die Möglichkeiten zum Anschluss von Sensoren auf dem I2C-Port. Der liegt übrigens auf den gleichen GPIO's, wie der weiterhin vorhandene ACC-Sensor. Eine aus meiner Sicht wichtige Änderung sind die jetzt auf GP16 und GP17 nach aussen geführten GPIO's. Dadurch wird neben dem Anschluss eines weiteren I2C-Sensors auch der Anschluss eines UART-Sensors möglich. Ich habe z.B. bei GPS-Tests mit dem GPS-Modul Air530 von Grove am UART-Port gearbeitet und sehr gute Erfahrungen gemacht.
-Gleich geblieben sind der USB-C Anschluss, das LCD Display (240x280 Pixel), die Steuermöglichkeiten (5-Achsen Joystick, zwei Button) und die drei verschiedenfarbigen LED's. Für ein paar Spielereien ist sicher auch die neu hinzugekommene RGB-LED nutzbar.
+Fractalbilder aud dem PBC+ erzeugen
+
+Ich zeige, wie man mit dem PicoBoy Color Plus in der Arduino-IDE die Mandelbrotmenge darstellt. Es handelt sich um die Darstellung der s.g. Apfelmännchen. Der Mikrocontroller RP2350 zeigt hier gegenüber dem 2040 ein noch beeindruckendere Rechenleistung. Bei gleichem Quellcode ist er mehr als doppelt so schnell mit dem Aufbau der Grafik fertig.
+
+Hier sind ein paar Hinweise zur Bedienung des Programms:
+
+1. Beim Einschalten wird die komplette Teilmenge dargestellt und nach Fertigstellung ein Rechteck für einen Zoom eingeblendet.
+
+2. Mit den Cursor-Tasten navigieren Sie zu einer beliebigen Stelle innerhalb des Displays und bestätigen mit der A-Taste. So legen Sie den Zoombereich fest. Darauf wird dieser Ausschnitt berechnet und dargestellt.
+
+3. (optional) Mit einem Klick auf 'Center' werden die augenblicklichen Werte angezeigt. Danach wird bei A-Taste die Berechnung fortgeführt, wo das Recheck zuletzt stand bzw. bei B-Taste 4. ausgeführt.
+
+4. Ein Klick auf die B-Taste setzt die Grafik auf die Anfangswerte zurück. 
