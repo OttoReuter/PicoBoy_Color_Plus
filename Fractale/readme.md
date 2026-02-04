@@ -1,4 +1,4 @@
-Fractalbilder aud dem PBC+ erzeugen
+Fractalbilder auf dem PBC+ erzeugen
 
 Ich zeige, wie man mit dem PicoBoy Color Plus in der Arduino-IDE die Mandelbrotmenge darstellt. Es handelt sich um die Darstellung der s.g. Apfelmännchen. Der Mikrocontroller RP2350 zeigt hier gegenüber dem 2040 ein noch beeindruckendere Rechenleistung. Bei gleichem Quellcode ist er mehr als doppelt so schnell mit dem Aufbau der Grafik fertig.
 
